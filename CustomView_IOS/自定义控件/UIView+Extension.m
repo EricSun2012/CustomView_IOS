@@ -121,6 +121,22 @@
     return self.frame.origin;
 }
 
+-(void)removeAllSubviews{
+    NSArray * array = [self subviews];
+    for (UIView * sub in array) {
+        [sub removeFromSuperview];
+    }
+}
+
+-(UIViewController *)getController{
+    for (UIView * view = [self superview];view ; view = [view superview]) {
+        UIResponder * responder = [view nextResponder];
+        if ([responder isKindOfClass:[UIViewController class]]||[[responder class] isSubclassOfClass:[UIViewController class]] ) {
+            return (UIViewController *)responder;
+        }
+    }
+    return nil;
+}
 
 - (void)addSingleTapEvent:(void(^)())event{
     
