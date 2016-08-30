@@ -14,6 +14,8 @@
 
 #import "JWKit.h"
 
+#import "UIViewController+KeyboardCorver.h" //控制器键盘监听
+
 @interface BaseViewController : UIViewController
 
 @property (nonatomic,strong) DemoModel * baseDemoModel;

@@ -21,4 +21,8 @@
 
 - (void)addSingleTapEvent:(void(^)())event;
 
+-(void)removeAllSubviews;
+
+-(UIViewController *)getController;
+
 @end
