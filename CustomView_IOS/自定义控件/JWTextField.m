@@ -310,3 +310,26 @@
 
 
 @end
+
+
+
+@implementation MNChineseField
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textChanged:) name:UITextFieldTextDidChangeNotification object:nil];
+    }
+    return self;
+}
+
+- (void)textChanged:(NSNotification *)note {
+    UITextField *field = (UITextField *)note.object;
+    
+    !_sendValueBlock ? : _sendValueBlock(field.text);
+}
+
+
+@end
+
