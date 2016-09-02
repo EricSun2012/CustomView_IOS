@@ -308,6 +308,18 @@
     }
 }
 
+- (BOOL)respondsToSelector:(SEL)aSelector
+{
+    
+    NSString * selectorName = NSStringFromSelector(aSelector);
+    if ([selectorName isEqualToString:@"customOverlayContainer"]) {
+        NSLog(@"preventing self.delegate == self crash");
+        return NO;
+    }
+    return [super respondsToSelector:aSelector];
+    
+}
+
 
 @end
 

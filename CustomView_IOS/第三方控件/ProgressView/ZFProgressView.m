@@ -49,7 +49,7 @@
         [self.progressLabel setTextColor:[UIColor whiteColor]];
         self.progressLabel.text = @"0%";
         self.progressLabel.textAlignment = NSTextAlignmentCenter;
-        self.progressLabel.font = [UIFont systemFontOfSize:25 weight:0.4];
+//        self.progressLabel.font = [UIFont systemFontOfSize:25 weight:0.4];
 //        [self addSubview:self.progressLabel];
         
         //init default variable
