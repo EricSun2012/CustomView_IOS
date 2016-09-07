@@ -53,7 +53,8 @@
                       [DemoModel itemWithDcit:@{@"title":@"CustomSwitchDemoViewController",@"demoDescribe":@"可设置文字和颜色的Switch",@"className":@"CustomSwitchDemoViewController"}],
                       [DemoModel itemWithDcit:@{@"title":@"MonitorScreenshotDemoViewController",@"demoDescribe":@"监听用户的截屏行为",@"className":@"MonitorScreenshotDemoViewController"}],
                       [DemoModel itemWithDcit:@{@"title":@"GradientAnimationDemoViewController",@"demoDescribe":@"渐变色动画label",@"className":@"GradientAnimationDemoViewController"}],
-                      [DemoModel itemWithDcit:@{@"title":@"DynamicLoopDemoViewController",@"demoDescribe":@"水波纹动画",@"className":@"DynamicLoopDemoViewController"}]
+                      [DemoModel itemWithDcit:@{@"title":@"DynamicLoopDemoViewController",@"demoDescribe":@"水波纹动画",@"className":@"DynamicLoopDemoViewController"}],
+                      [DemoModel itemWithDcit:@{@"title":@"PollingDemoViewController",@"demoDescribe":@"广告轮播封装",@"className":@"PollingDemoViewController"}]
                       ];
     
     
