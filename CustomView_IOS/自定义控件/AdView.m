@@ -17,6 +17,7 @@
 #import "AdView.h"
 #import "UIImageView+AFNetworking.h"
 #import "JWKitMacro.h"
+#import "YYAnimatedImageView.h"
 //#import "UIImageView+WebCache.h"
 //广告的宽度
 #define kAdViewWidth  _adScrollView.bounds.size.width
@@ -35,9 +36,9 @@ static NSUInteger rightImageIndex;
     //广告的label
     //    UILabel * _adLabel;
     //循环滚动的三个视图
-    UIImageView * _leftImageView;
-    UIImageView * _centerImageView;
-    UIImageView * _rightImageView;
+    YYAnimatedImageView * _leftImageView;
+    YYAnimatedImageView * _centerImageView;
+    YYAnimatedImageView * _rightImageView;
     //循环滚动的周期时间
     
     //用于确定滚动式由人导致的还是计时器到了,系统帮我们滚动的,YES,则为系统滚动,NO则为客户滚动(ps.在客户端中客户滚动一个广告后,这个广告的计时器要归0并重新计时)
@@ -48,9 +49,9 @@ static NSUInteger rightImageIndex;
     //    UILabel * _rightAdLabel;
 }
 
-@property (retain,nonatomic,readonly) UIImageView * leftImageView;
-@property (retain,nonatomic,readonly) UIImageView * centerImageView;
-@property (retain,nonatomic,readonly) UIImageView * rightImageView;
+@property (retain,nonatomic,readonly) YYAnimatedImageView * leftImageView;
+@property (retain,nonatomic,readonly) YYAnimatedImageView * centerImageView;
+@property (retain,nonatomic,readonly) YYAnimatedImageView * rightImageView;
 @end
 
 @implementation AdView
@@ -75,16 +76,16 @@ static NSUInteger rightImageIndex;
         //该句是否执行会影响pageControl的位置,如果该应用上面有导航栏,就是用该句,否则注释掉即可
         _adScrollView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
         
-        _leftImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, kAdViewWidth, kAdViewHeight)];
+        _leftImageView = [[YYAnimatedImageView alloc]initWithFrame:CGRectMake(0, 0, kAdViewWidth, kAdViewHeight)];
         [_adScrollView addSubview:_leftImageView];
         
-        _centerImageView = [[UIImageView alloc]initWithFrame:CGRectMake(kAdViewWidth, 0, kAdViewWidth, kAdViewHeight)];
+        _centerImageView = [[YYAnimatedImageView alloc]initWithFrame:CGRectMake(kAdViewWidth, 0, kAdViewWidth, kAdViewHeight)];
         _centerImageView.userInteractionEnabled = YES;
         
         [_centerImageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap)]];
         [_adScrollView addSubview:_centerImageView];
         
-        _rightImageView = [[UIImageView alloc]initWithFrame:CGRectMake(kAdViewWidth*2, 0, kAdViewWidth, kAdViewHeight)];
+        _rightImageView = [[YYAnimatedImageView alloc]initWithFrame:CGRectMake(kAdViewWidth*2, 0, kAdViewWidth, kAdViewHeight)];
         [_adScrollView addSubview:_rightImageView];
         
         _adScrollView.backgroundColor = [UIColor whiteColor];

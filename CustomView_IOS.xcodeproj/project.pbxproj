@@ -104,6 +104,11 @@
 		1100BFA31D7FE6E30058F230 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1100BF921D7FE6E30058F230 /* UIRefreshControl+AFNetworking.m */; };
 		1100BFA41D7FE6E30058F230 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1100BF941D7FE6E30058F230 /* UIWebView+AFNetworking.m */; };
 		1100BFA71D7FE72B0058F230 /* bannerData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1100BFA61D7FE72B0058F230 /* bannerData.m */; };
+		1100BFB31D7FEB3B0058F230 /* YYAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1100BFAA1D7FEB3B0058F230 /* YYAnimatedImageView.m */; };
+		1100BFB41D7FEB3B0058F230 /* YYFrameImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1100BFAC1D7FEB3B0058F230 /* YYFrameImage.m */; };
+		1100BFB51D7FEB3B0058F230 /* YYImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1100BFAE1D7FEB3B0058F230 /* YYImage.m */; };
+		1100BFB61D7FEB3B0058F230 /* YYImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1100BFB01D7FEB3B0058F230 /* YYImageCoder.m */; };
+		1100BFB71D7FEB3B0058F230 /* YYSpriteSheetImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1100BFB21D7FEB3B0058F230 /* YYSpriteSheetImage.m */; };
 		1117A7121D7FB45000B56974 /* FPSLabelContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1117A7071D7FB45000B56974 /* FPSLabelContainerVC.m */; };
 		1117A7131D7FB45000B56974 /* FPSLabelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1117A7091D7FB45000B56974 /* FPSLabelManager.m */; };
 		1117A7141D7FB45000B56974 /* FPSLabelRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1117A70B1D7FB45000B56974 /* FPSLabelRootVC.m */; };
@@ -351,6 +356,16 @@
 		1100BF941D7FE6E30058F230 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		1100BFA51D7FE72B0058F230 /* bannerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bannerData.h; sourceTree = "<group>"; };
 		1100BFA61D7FE72B0058F230 /* bannerData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bannerData.m; sourceTree = "<group>"; };
+		1100BFA91D7FEB3B0058F230 /* YYAnimatedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYAnimatedImageView.h; sourceTree = "<group>"; };
+		1100BFAA1D7FEB3B0058F230 /* YYAnimatedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYAnimatedImageView.m; sourceTree = "<group>"; };
+		1100BFAB1D7FEB3B0058F230 /* YYFrameImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFrameImage.h; sourceTree = "<group>"; };
+		1100BFAC1D7FEB3B0058F230 /* YYFrameImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFrameImage.m; sourceTree = "<group>"; };
+		1100BFAD1D7FEB3B0058F230 /* YYImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYImage.h; sourceTree = "<group>"; };
+		1100BFAE1D7FEB3B0058F230 /* YYImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYImage.m; sourceTree = "<group>"; };
+		1100BFAF1D7FEB3B0058F230 /* YYImageCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYImageCoder.h; sourceTree = "<group>"; };
+		1100BFB01D7FEB3B0058F230 /* YYImageCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYImageCoder.m; sourceTree = "<group>"; };
+		1100BFB11D7FEB3B0058F230 /* YYSpriteSheetImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYSpriteSheetImage.h; sourceTree = "<group>"; };
+		1100BFB21D7FEB3B0058F230 /* YYSpriteSheetImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYSpriteSheetImage.m; sourceTree = "<group>"; };
 		1117A7061D7FB45000B56974 /* FPSLabelContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSLabelContainerVC.h; sourceTree = "<group>"; };
 		1117A7071D7FB45000B56974 /* FPSLabelContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSLabelContainerVC.m; sourceTree = "<group>"; };
 		1117A7081D7FB45000B56974 /* FPSLabelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSLabelManager.h; sourceTree = "<group>"; };
@@ -544,6 +559,7 @@
 		0758E90B1D6FF37A00E7FCE7 /* 第三方控件 */ = {
 			isa = PBXGroup;
 			children = (
+				1100BFA81D7FEB3B0058F230 /* YYImage */,
 				1100BF6E1D7FE6E30058F230 /* Network */,
 				1117A7051D7FB44400B56974 /* FPSLabel */,
 				11D36AA41D7534F400247B10 /* CustomSwitch */,
@@ -875,6 +891,23 @@
 			path = "UIKit+AFNetworking";
 			sourceTree = "<group>";
 		};
+		1100BFA81D7FEB3B0058F230 /* YYImage */ = {
+			isa = PBXGroup;
+			children = (
+				1100BFA91D7FEB3B0058F230 /* YYAnimatedImageView.h */,
+				1100BFAA1D7FEB3B0058F230 /* YYAnimatedImageView.m */,
+				1100BFAB1D7FEB3B0058F230 /* YYFrameImage.h */,
+				1100BFAC1D7FEB3B0058F230 /* YYFrameImage.m */,
+				1100BFAD1D7FEB3B0058F230 /* YYImage.h */,
+				1100BFAE1D7FEB3B0058F230 /* YYImage.m */,
+				1100BFAF1D7FEB3B0058F230 /* YYImageCoder.h */,
+				1100BFB01D7FEB3B0058F230 /* YYImageCoder.m */,
+				1100BFB11D7FEB3B0058F230 /* YYSpriteSheetImage.h */,
+				1100BFB21D7FEB3B0058F230 /* YYSpriteSheetImage.m */,
+			);
+			path = YYImage;
+			sourceTree = "<group>";
+		};
 		1117A7051D7FB44400B56974 /* FPSLabel */ = {
 			isa = PBXGroup;
 			children = (
@@ -1098,6 +1131,7 @@
 				0758E9D41D6FF37A00E7FCE7 /* UIImage+WebP.m in Sources */,
 				0758E9C11D6FF37A00E7FCE7 /* NSObject+MJProperty.m in Sources */,
 				11D36A8D1D751AFC00247B10 /* PinYinForObjc.m in Sources */,
+				1100BFB41D7FEB3B0058F230 /* YYFrameImage.m in Sources */,
 				11D36A931D75248D00247B10 /* ZFProgressView.m in Sources */,
 				0758E9CB1D6FF37A00E7FCE7 /* SDWebImageCompat.m in Sources */,
 				0758E9DE1D6FF37A00E7FCE7 /* NSObject+Extension.m in Sources */,
@@ -1111,6 +1145,7 @@
 				11D36A891D751AFC00247B10 /* ChineseToPinyinResource.m in Sources */,
 				0758E9A41D6FF37A00E7FCE7 /* XYPieChartDemoViewController.m in Sources */,
 				0758E9C61D6FF37A00E7FCE7 /* PDTSimpleCalendarViewHeader.m in Sources */,
+				1100BFB61D7FEB3B0058F230 /* YYImageCoder.m in Sources */,
 				1100BF961D7FE6E30058F230 /* AFNetworkReachabilityManager.m in Sources */,
 				0758E9C21D6FF37A00E7FCE7 /* NSString+MJExtension.m in Sources */,
 				0758E9CC1D6FF37A00E7FCE7 /* SDWebImageDecoder.m in Sources */,
@@ -1151,6 +1186,7 @@
 				11D36AAD1D75380600247B10 /* MonitorScreenshotDemoViewController.m in Sources */,
 				0758E9A21D6FF37A00E7FCE7 /* KeyboardDemoViewController.m in Sources */,
 				11D36AA71D75350000247B10 /* ZJSwitch.m in Sources */,
+				1100BFB31D7FEB3B0058F230 /* YYAnimatedImageView.m in Sources */,
 				0758E9CF1D6FF37A00E7FCE7 /* SDWebImageManager.m in Sources */,
 				0758E9DF1D6FF37A00E7FCE7 /* UIView+Extension.m in Sources */,
 				0758E99B1D6FF37A00E7FCE7 /* main.m in Sources */,
@@ -1165,8 +1201,10 @@
 				11D36A991D752B5700247B10 /* LocalCheckBankDemoViewController.m in Sources */,
 				1143521A1D7FB956009EE8F8 /* GradientAnimationDemoViewController.m in Sources */,
 				0758E9AD1D6FF37A00E7FCE7 /* Foundation+Log.m in Sources */,
+				1100BFB71D7FEB3B0058F230 /* YYSpriteSheetImage.m in Sources */,
 				11D36A881D751AFC00247B10 /* ChineseInclude.m in Sources */,
 				0758E9C01D6FF37A00E7FCE7 /* NSObject+MJKeyValue.m in Sources */,
+				1100BFB51D7FEB3B0058F230 /* YYImage.m in Sources */,
 				0758E99F1D6FF37A00E7FCE7 /* DemoListViewController.m in Sources */,
 				0758E9BF1D6FF37A00E7FCE7 /* NSObject+MJCoding.m in Sources */,
 				1100BFA01D7FE6E30058F230 /* UIButton+AFNetworking.m in Sources */,
