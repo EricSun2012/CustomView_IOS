@@ -91,6 +91,10 @@
 		1117A7151D7FB45000B56974 /* FPSLabelRootWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1117A70D1D7FB45000B56974 /* FPSLabelRootWindow.m */; };
 		1117A7161D7FB45000B56974 /* FPSShowLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1117A70F1D7FB45000B56974 /* FPSShowLabel.m */; };
 		1117A7171D7FB45000B56974 /* FPSWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1117A7111D7FB45000B56974 /* FPSWeakProxy.m */; };
+		114352171D7FB772009EE8F8 /* GradientAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 114352161D7FB772009EE8F8 /* GradientAnimationView.m */; };
+		1143521A1D7FB956009EE8F8 /* GradientAnimationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 114352191D7FB956009EE8F8 /* GradientAnimationDemoViewController.m */; };
+		1143521D1D7FBAA5009EE8F8 /* DynamicLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = 1143521C1D7FBAA5009EE8F8 /* DynamicLoop.m */; };
+		114352201D7FBAF0009EE8F8 /* DynamicLoopDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1143521F1D7FBAF0009EE8F8 /* DynamicLoopDemoViewController.m */; };
 		11D36A731D751A5000247B10 /* SearchBankDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D36A721D751A5000247B10 /* SearchBankDemoViewController.m */; };
 		11D36A761D751ABE00247B10 /* DWBankModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D36A751D751ABE00247B10 /* DWBankModel.m */; };
 		11D36A881D751AFC00247B10 /* ChineseInclude.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D36A791D751AFC00247B10 /* ChineseInclude.m */; };
@@ -298,6 +302,14 @@
 		1117A70F1D7FB45000B56974 /* FPSShowLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSShowLabel.m; sourceTree = "<group>"; };
 		1117A7101D7FB45000B56974 /* FPSWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSWeakProxy.h; sourceTree = "<group>"; };
 		1117A7111D7FB45000B56974 /* FPSWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSWeakProxy.m; sourceTree = "<group>"; };
+		114352151D7FB772009EE8F8 /* GradientAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientAnimationView.h; sourceTree = "<group>"; };
+		114352161D7FB772009EE8F8 /* GradientAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientAnimationView.m; sourceTree = "<group>"; };
+		114352181D7FB956009EE8F8 /* GradientAnimationDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientAnimationDemoViewController.h; sourceTree = "<group>"; };
+		114352191D7FB956009EE8F8 /* GradientAnimationDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientAnimationDemoViewController.m; sourceTree = "<group>"; };
+		1143521B1D7FBAA5009EE8F8 /* DynamicLoop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicLoop.h; sourceTree = "<group>"; };
+		1143521C1D7FBAA5009EE8F8 /* DynamicLoop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicLoop.m; sourceTree = "<group>"; };
+		1143521E1D7FBAF0009EE8F8 /* DynamicLoopDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicLoopDemoViewController.h; sourceTree = "<group>"; };
+		1143521F1D7FBAF0009EE8F8 /* DynamicLoopDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicLoopDemoViewController.m; sourceTree = "<group>"; };
 		11D36A711D751A5000247B10 /* SearchBankDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBankDemoViewController.h; sourceTree = "<group>"; };
 		11D36A721D751A5000247B10 /* SearchBankDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBankDemoViewController.m; sourceTree = "<group>"; };
 		11D36A741D751ABE00247B10 /* DWBankModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWBankModel.h; sourceTree = "<group>"; };
@@ -474,6 +486,10 @@
 				11D36AA91D75354100247B10 /* CustomSwitchDemoViewController.m */,
 				11D36AAB1D75380600247B10 /* MonitorScreenshotDemoViewController.h */,
 				11D36AAC1D75380600247B10 /* MonitorScreenshotDemoViewController.m */,
+				114352181D7FB956009EE8F8 /* GradientAnimationDemoViewController.h */,
+				114352191D7FB956009EE8F8 /* GradientAnimationDemoViewController.m */,
+				1143521E1D7FBAF0009EE8F8 /* DynamicLoopDemoViewController.h */,
+				1143521F1D7FBAF0009EE8F8 /* DynamicLoopDemoViewController.m */,
 			);
 			path = DemoVCS;
 			sourceTree = "<group>";
@@ -700,6 +716,10 @@
 		0758E9871D6FF37A00E7FCE7 /* 自定义控件 */ = {
 			isa = PBXGroup;
 			children = (
+				114352151D7FB772009EE8F8 /* GradientAnimationView.h */,
+				114352161D7FB772009EE8F8 /* GradientAnimationView.m */,
+				1143521B1D7FBAA5009EE8F8 /* DynamicLoop.h */,
+				1143521C1D7FBAA5009EE8F8 /* DynamicLoop.m */,
 				0758E9881D6FF37A00E7FCE7 /* JWAlertView.h */,
 				0758E9891D6FF37A00E7FCE7 /* JWAlertView.m */,
 				0758E98A1D6FF37A00E7FCE7 /* JWKit.h */,
@@ -940,7 +960,9 @@
 				0758E9941D6FF37A00E7FCE7 /* AppDelegate.m in Sources */,
 				11D36A8C1D751AFC00247B10 /* PinyinFormatter.m in Sources */,
 				0758E9A01D6FF37A00E7FCE7 /* BaseViewController.m in Sources */,
+				114352171D7FB772009EE8F8 /* GradientAnimationView.m in Sources */,
 				0758E9D61D6FF37A00E7FCE7 /* UIImageView+WebCache.m in Sources */,
+				1143521D1D7FBAA5009EE8F8 /* DynamicLoop.m in Sources */,
 				0758E9CE1D6FF37A00E7FCE7 /* SDWebImageDownloaderOperation.m in Sources */,
 				11D36AA31D75329700247B10 /* SavePermanentDemoViewController.m in Sources */,
 				0758E9DA1D6FF37A00E7FCE7 /* YYWeakProxy.m in Sources */,
@@ -974,6 +996,7 @@
 				0758E9BE1D6FF37A00E7FCE7 /* NSObject+MJClass.m in Sources */,
 				11D36A761D751ABE00247B10 /* DWBankModel.m in Sources */,
 				0758E9AC1D6FF37A00E7FCE7 /* MVVMStore.m in Sources */,
+				114352201D7FBAF0009EE8F8 /* DynamicLoopDemoViewController.m in Sources */,
 				0758E9D31D6FF37A00E7FCE7 /* UIImage+MultiFormat.m in Sources */,
 				0758E9C81D6FF37A00E7FCE7 /* MKAnnotationView+WebCache.m in Sources */,
 				1117A7171D7FB45000B56974 /* FPSWeakProxy.m in Sources */,
@@ -1001,6 +1024,7 @@
 				0758E99C1D6FF37A00E7FCE7 /* DemoModel.m in Sources */,
 				0758E9C51D6FF37A00E7FCE7 /* PDTSimpleCalendarViewFlowLayout.m in Sources */,
 				11D36A991D752B5700247B10 /* LocalCheckBankDemoViewController.m in Sources */,
+				1143521A1D7FB956009EE8F8 /* GradientAnimationDemoViewController.m in Sources */,
 				0758E9AD1D6FF37A00E7FCE7 /* Foundation+Log.m in Sources */,
 				11D36A881D751AFC00247B10 /* ChineseInclude.m in Sources */,
 				0758E9C01D6FF37A00E7FCE7 /* NSObject+MJKeyValue.m in Sources */,

@@ -16,6 +16,8 @@
 
 #import "UIViewController+KeyboardCorver.h" //控制器键盘监听
 
+#import "GradientAnimationView.h"
+
 @interface BaseViewController : UIViewController
 
 @property (nonatomic,strong) DemoModel * baseDemoModel;
