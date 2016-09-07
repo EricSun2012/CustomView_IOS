@@ -51,7 +51,9 @@
                       [DemoModel itemWithDcit:@{@"title":@"LocalCheckBankDemoViewController",@"demoDescribe":@"本地校验银行卡",@"className":@"LocalCheckBankDemoViewController"}],
                       [DemoModel itemWithDcit:@{@"title":@"SavePermanentDemoViewController",@"demoDescribe":@"永久保存数据到到手机",@"className":@"SavePermanentDemoViewController"}],
                       [DemoModel itemWithDcit:@{@"title":@"CustomSwitchDemoViewController",@"demoDescribe":@"可设置文字和颜色的Switch",@"className":@"CustomSwitchDemoViewController"}],
-                      [DemoModel itemWithDcit:@{@"title":@"MonitorScreenshotDemoViewController",@"demoDescribe":@"监听用户的截屏行为",@"className":@"MonitorScreenshotDemoViewController"}]
+                      [DemoModel itemWithDcit:@{@"title":@"MonitorScreenshotDemoViewController",@"demoDescribe":@"监听用户的截屏行为",@"className":@"MonitorScreenshotDemoViewController"}],
+                      [DemoModel itemWithDcit:@{@"title":@"GradientAnimationDemoViewController",@"demoDescribe":@"渐变色动画label",@"className":@"GradientAnimationDemoViewController"}],
+                      [DemoModel itemWithDcit:@{@"title":@"DynamicLoopDemoViewController",@"demoDescribe":@"水波纹动画",@"className":@"DynamicLoopDemoViewController"}]
                       ];
     
     

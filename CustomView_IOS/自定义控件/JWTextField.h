@@ -33,3 +33,14 @@ typedef NS_ENUM(NSInteger, TextFieldImportStyle) {
 @property (nonatomic,assign) BOOL zoomText; //是否缩放文字
 
 @end
+
+
+/**
+ *  可以输入中文输入框
+ */
+
+@interface MNChineseField : UITextField
+
+@property (nonatomic, copy) void (^sendValueBlock)(NSString *backStr);
+
+@end

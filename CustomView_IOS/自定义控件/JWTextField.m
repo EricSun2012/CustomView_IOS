@@ -308,5 +308,40 @@
     }
 }
 
+- (BOOL)respondsToSelector:(SEL)aSelector
+{
+    
+    NSString * selectorName = NSStringFromSelector(aSelector);
+    if ([selectorName isEqualToString:@"customOverlayContainer"]) {
+        NSLog(@"preventing self.delegate == self crash");
+        return NO;
+    }
+    return [super respondsToSelector:aSelector];
+    
+}
+
 
 @end
+
+
+
+@implementation MNChineseField
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textChanged:) name:UITextFieldTextDidChangeNotification object:nil];
+    }
+    return self;
+}
+
+- (void)textChanged:(NSNotification *)note {
+    UITextField *field = (UITextField *)note.object;
+    
+    !_sendValueBlock ? : _sendValueBlock(field.text);
+}
+
+
+@end
+
