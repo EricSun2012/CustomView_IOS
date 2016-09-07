@@ -10,6 +10,8 @@
 
 #import "JWLabel.h"
 
+#import "YYWeakProxy.h"
+
 @implementation JWLabel
 
 +(JWLabel *)setLabelTitle:(NSString *)title setLabelFrame:(CGRect)frame setLabelColor:(UIColor *)color setLabelFont:(UIFont *)font
@@ -51,7 +53,7 @@
                                    @"value" : @(value),
                                    @"ratio" : @(ratio)
                                    };
-        NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:0.02 target:self selector:@selector(setupLabelUp:) userInfo:userInfo repeats:YES];
+        NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:0.02 target:[YYWeakProxy proxyWithTarget:self] selector:@selector(setupLabelUp:) userInfo:userInfo repeats:YES];
         [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
     }else if (delta < 0){
         self.text = [NSString stringWithFormat:@"%.2f", value];
