@@ -95,6 +95,7 @@
 		1143521A1D7FB956009EE8F8 /* GradientAnimationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 114352191D7FB956009EE8F8 /* GradientAnimationDemoViewController.m */; };
 		1143521D1D7FBAA5009EE8F8 /* DynamicLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = 1143521C1D7FBAA5009EE8F8 /* DynamicLoop.m */; };
 		114352201D7FBAF0009EE8F8 /* DynamicLoopDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1143521F1D7FBAF0009EE8F8 /* DynamicLoopDemoViewController.m */; };
+		114352231D7FBEB1009EE8F8 /* UITabBar+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 114352221D7FBEB1009EE8F8 /* UITabBar+Badge.m */; };
 		11D36A731D751A5000247B10 /* SearchBankDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D36A721D751A5000247B10 /* SearchBankDemoViewController.m */; };
 		11D36A761D751ABE00247B10 /* DWBankModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D36A751D751ABE00247B10 /* DWBankModel.m */; };
 		11D36A881D751AFC00247B10 /* ChineseInclude.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D36A791D751AFC00247B10 /* ChineseInclude.m */; };
@@ -310,6 +311,8 @@
 		1143521C1D7FBAA5009EE8F8 /* DynamicLoop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicLoop.m; sourceTree = "<group>"; };
 		1143521E1D7FBAF0009EE8F8 /* DynamicLoopDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicLoopDemoViewController.h; sourceTree = "<group>"; };
 		1143521F1D7FBAF0009EE8F8 /* DynamicLoopDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicLoopDemoViewController.m; sourceTree = "<group>"; };
+		114352211D7FBEB1009EE8F8 /* UITabBar+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+Badge.h"; sourceTree = "<group>"; };
+		114352221D7FBEB1009EE8F8 /* UITabBar+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+Badge.m"; sourceTree = "<group>"; };
 		11D36A711D751A5000247B10 /* SearchBankDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBankDemoViewController.h; sourceTree = "<group>"; };
 		11D36A721D751A5000247B10 /* SearchBankDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBankDemoViewController.m; sourceTree = "<group>"; };
 		11D36A741D751ABE00247B10 /* DWBankModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWBankModel.h; sourceTree = "<group>"; };
@@ -716,6 +719,8 @@
 		0758E9871D6FF37A00E7FCE7 /* 自定义控件 */ = {
 			isa = PBXGroup;
 			children = (
+				114352211D7FBEB1009EE8F8 /* UITabBar+Badge.h */,
+				114352221D7FBEB1009EE8F8 /* UITabBar+Badge.m */,
 				114352151D7FB772009EE8F8 /* GradientAnimationView.h */,
 				114352161D7FB772009EE8F8 /* GradientAnimationView.m */,
 				1143521B1D7FBAA5009EE8F8 /* DynamicLoop.h */,
@@ -976,6 +981,7 @@
 				11D36A931D75248D00247B10 /* ZFProgressView.m in Sources */,
 				0758E9CB1D6FF37A00E7FCE7 /* SDWebImageCompat.m in Sources */,
 				0758E9DE1D6FF37A00E7FCE7 /* NSObject+Extension.m in Sources */,
+				114352231D7FBEB1009EE8F8 /* UITabBar+Badge.m in Sources */,
 				0758E9AF1D6FF37A00E7FCE7 /* JPSCameraButton.m in Sources */,
 				0758E9BD1D6FF37A00E7FCE7 /* MJPropertyType.m in Sources */,
 				0758E9DB1D6FF37A00E7FCE7 /* JWAlertView.m in Sources */,
