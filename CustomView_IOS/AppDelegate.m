@@ -8,7 +8,11 @@
 
 #import "AppDelegate.h"
 #import "DemoListViewController.h"
+#import "FPSLabelManager.h"
+#import "FPSShowLabel.h"
+
 @interface AppDelegate ()
+@property (nonatomic,strong) FPSLabelManager * showFPSLabel;
 
 @end
 
@@ -25,6 +29,10 @@
     self.window.frame = [UIScreen mainScreen].bounds;
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
+    
+    //fpslab
+    FPSLabelManager * fpsL = [FPSLabelManager new];
+    self.showFPSLabel = fpsL;
     return YES;
 
 }

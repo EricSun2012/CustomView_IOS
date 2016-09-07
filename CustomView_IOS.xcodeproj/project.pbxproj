@@ -85,6 +85,12 @@
 		0758E9E31D6FF3AE00E7FCE7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0758E9E21D6FF3AE00E7FCE7 /* libz.tbd */; };
 		0758E9E61D6FF50B00E7FCE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0758E9E51D6FF50B00E7FCE7 /* Main.storyboard */; };
 		0758E9E81D6FF53E00E7FCE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0758E9E71D6FF53E00E7FCE7 /* LaunchScreen.storyboard */; };
+		1117A7121D7FB45000B56974 /* FPSLabelContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1117A7071D7FB45000B56974 /* FPSLabelContainerVC.m */; };
+		1117A7131D7FB45000B56974 /* FPSLabelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1117A7091D7FB45000B56974 /* FPSLabelManager.m */; };
+		1117A7141D7FB45000B56974 /* FPSLabelRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1117A70B1D7FB45000B56974 /* FPSLabelRootVC.m */; };
+		1117A7151D7FB45000B56974 /* FPSLabelRootWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1117A70D1D7FB45000B56974 /* FPSLabelRootWindow.m */; };
+		1117A7161D7FB45000B56974 /* FPSShowLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1117A70F1D7FB45000B56974 /* FPSShowLabel.m */; };
+		1117A7171D7FB45000B56974 /* FPSWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1117A7111D7FB45000B56974 /* FPSWeakProxy.m */; };
 		11D36A731D751A5000247B10 /* SearchBankDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D36A721D751A5000247B10 /* SearchBankDemoViewController.m */; };
 		11D36A761D751ABE00247B10 /* DWBankModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D36A751D751ABE00247B10 /* DWBankModel.m */; };
 		11D36A881D751AFC00247B10 /* ChineseInclude.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D36A791D751AFC00247B10 /* ChineseInclude.m */; };
@@ -280,6 +286,18 @@
 		0758E9E21D6FF3AE00E7FCE7 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		0758E9E51D6FF50B00E7FCE7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0758E9E71D6FF53E00E7FCE7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1117A7061D7FB45000B56974 /* FPSLabelContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSLabelContainerVC.h; sourceTree = "<group>"; };
+		1117A7071D7FB45000B56974 /* FPSLabelContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSLabelContainerVC.m; sourceTree = "<group>"; };
+		1117A7081D7FB45000B56974 /* FPSLabelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSLabelManager.h; sourceTree = "<group>"; };
+		1117A7091D7FB45000B56974 /* FPSLabelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSLabelManager.m; sourceTree = "<group>"; };
+		1117A70A1D7FB45000B56974 /* FPSLabelRootVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSLabelRootVC.h; sourceTree = "<group>"; };
+		1117A70B1D7FB45000B56974 /* FPSLabelRootVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSLabelRootVC.m; sourceTree = "<group>"; };
+		1117A70C1D7FB45000B56974 /* FPSLabelRootWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSLabelRootWindow.h; sourceTree = "<group>"; };
+		1117A70D1D7FB45000B56974 /* FPSLabelRootWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSLabelRootWindow.m; sourceTree = "<group>"; };
+		1117A70E1D7FB45000B56974 /* FPSShowLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSShowLabel.h; sourceTree = "<group>"; };
+		1117A70F1D7FB45000B56974 /* FPSShowLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSShowLabel.m; sourceTree = "<group>"; };
+		1117A7101D7FB45000B56974 /* FPSWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSWeakProxy.h; sourceTree = "<group>"; };
+		1117A7111D7FB45000B56974 /* FPSWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSWeakProxy.m; sourceTree = "<group>"; };
 		11D36A711D751A5000247B10 /* SearchBankDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBankDemoViewController.h; sourceTree = "<group>"; };
 		11D36A721D751A5000247B10 /* SearchBankDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBankDemoViewController.m; sourceTree = "<group>"; };
 		11D36A741D751ABE00247B10 /* DWBankModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWBankModel.h; sourceTree = "<group>"; };
@@ -463,6 +481,7 @@
 		0758E90B1D6FF37A00E7FCE7 /* 第三方控件 */ = {
 			isa = PBXGroup;
 			children = (
+				1117A7051D7FB44400B56974 /* FPSLabel */,
 				11D36AA41D7534F400247B10 /* CustomSwitch */,
 				11D36A9A1D75325B00247B10 /* KeychainIDFA */,
 				11D36A901D75248000247B10 /* ProgressView */,
@@ -713,6 +732,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		1117A7051D7FB44400B56974 /* FPSLabel */ = {
+			isa = PBXGroup;
+			children = (
+				1117A7061D7FB45000B56974 /* FPSLabelContainerVC.h */,
+				1117A7071D7FB45000B56974 /* FPSLabelContainerVC.m */,
+				1117A7081D7FB45000B56974 /* FPSLabelManager.h */,
+				1117A7091D7FB45000B56974 /* FPSLabelManager.m */,
+				1117A70A1D7FB45000B56974 /* FPSLabelRootVC.h */,
+				1117A70B1D7FB45000B56974 /* FPSLabelRootVC.m */,
+				1117A70C1D7FB45000B56974 /* FPSLabelRootWindow.h */,
+				1117A70D1D7FB45000B56974 /* FPSLabelRootWindow.m */,
+				1117A70E1D7FB45000B56974 /* FPSShowLabel.h */,
+				1117A70F1D7FB45000B56974 /* FPSShowLabel.m */,
+				1117A7101D7FB45000B56974 /* FPSWeakProxy.h */,
+				1117A7111D7FB45000B56974 /* FPSWeakProxy.m */,
+			);
+			path = FPSLabel;
+			sourceTree = "<group>";
+		};
 		11D36A771D751AFC00247B10 /* PinYin */ = {
 			isa = PBXGroup;
 			children = (
@@ -938,6 +976,7 @@
 				0758E9AC1D6FF37A00E7FCE7 /* MVVMStore.m in Sources */,
 				0758E9D31D6FF37A00E7FCE7 /* UIImage+MultiFormat.m in Sources */,
 				0758E9C81D6FF37A00E7FCE7 /* MKAnnotationView+WebCache.m in Sources */,
+				1117A7171D7FB45000B56974 /* FPSWeakProxy.m in Sources */,
 				0758E99E1D6FF37A00E7FCE7 /* CustomLabelDemoViewController.m in Sources */,
 				0758E9BB1D6FF37A00E7FCE7 /* MJProperty.m in Sources */,
 				11D36A961D7524CB00247B10 /* CustomProgressDemoViewController.m in Sources */,
@@ -946,6 +985,7 @@
 				0758E9D81D6FF37A00E7FCE7 /* NSObject+YYModel.m in Sources */,
 				0758E9B61D6FF37A00E7FCE7 /* MDRadialProgressView.m in Sources */,
 				0758E9AA1D6FF37A00E7FCE7 /* FMResultSet.m in Sources */,
+				1117A7131D7FB45000B56974 /* FPSLabelManager.m in Sources */,
 				0758E9D91D6FF37A00E7FCE7 /* YYClassInfo.m in Sources */,
 				0758E9D71D6FF37A00E7FCE7 /* UIView+WebCacheOperation.m in Sources */,
 				11D36AA01D75325B00247B10 /* KeychainIDFA.m in Sources */,
@@ -955,6 +995,7 @@
 				0758E9CF1D6FF37A00E7FCE7 /* SDWebImageManager.m in Sources */,
 				0758E9DF1D6FF37A00E7FCE7 /* UIView+Extension.m in Sources */,
 				0758E99B1D6FF37A00E7FCE7 /* main.m in Sources */,
+				1117A7141D7FB45000B56974 /* FPSLabelRootVC.m in Sources */,
 				0758E9DC1D6FF37A00E7FCE7 /* JWLabel.m in Sources */,
 				11D36AAA1D75354100247B10 /* CustomSwitchDemoViewController.m in Sources */,
 				0758E99C1D6FF37A00E7FCE7 /* DemoModel.m in Sources */,
@@ -972,6 +1013,7 @@
 				0758E9BC1D6FF37A00E7FCE7 /* MJPropertyKey.m in Sources */,
 				0758E9B21D6FF37A00E7FCE7 /* JPSVolumeButtonHandler.m in Sources */,
 				0758E9BA1D6FF37A00E7FCE7 /* MJFoundation.m in Sources */,
+				1117A7121D7FB45000B56974 /* FPSLabelContainerVC.m in Sources */,
 				0758E9C91D6FF37A00E7FCE7 /* NSData+ImageContentType.m in Sources */,
 				0758E9B81D6FF37A00E7FCE7 /* MJDictionaryCache.m in Sources */,
 				11D36A731D751A5000247B10 /* SearchBankDemoViewController.m in Sources */,
@@ -979,7 +1021,9 @@
 				0758E9A81D6FF37A00E7FCE7 /* FMDatabasePool.m in Sources */,
 				0758E9A91D6FF37A00E7FCE7 /* FMDatabaseQueue.m in Sources */,
 				11D36A8A1D751AFC00247B10 /* HanyuPinyinOutputFormat.m in Sources */,
+				1117A7161D7FB45000B56974 /* FPSShowLabel.m in Sources */,
 				0758E9CD1D6FF37A00E7FCE7 /* SDWebImageDownloader.m in Sources */,
+				1117A7151D7FB45000B56974 /* FPSLabelRootWindow.m in Sources */,
 				0758E9A51D6FF37A00E7FCE7 /* UIViewController+KeyboardCorver.m in Sources */,
 				0758E9B71D6FF37A00E7FCE7 /* XYPieChart.m in Sources */,
 				0758E9B91D6FF37A00E7FCE7 /* MJExtensionConst.m in Sources */,
