@@ -8,7 +8,7 @@
 
 #import "DynamicLoop.h"
 #import "JWKitMacro.h"
-
+#import "YYWeakProxy.h"
 @interface DynamicLoop ()
 @property (nonatomic ,assign)CGFloat t;
 @end
@@ -41,7 +41,7 @@
 }
 
 -(void)didMoveToSuperview{
-    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:0.02 target:self selector:@selector(change) userInfo:nil repeats:YES];
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:0.02 target:[YYWeakProxy proxyWithTarget:self] selector:@selector(change) userInfo:nil repeats:YES];
     [timer fire];
 }
 

@@ -9,6 +9,7 @@
 #import "HeadlineView.h"
 #import "bannerData.h"
 #import "JWKitMacro.h"
+#import "YYWeakProxy.h"
 
 @interface HeadlineView ()
 {
@@ -90,7 +91,7 @@
 
 - (void)createTimer
 {
-    _timer=[NSTimer scheduledTimerWithTimeInterval:5.0 target:self selector:@selector(dealTimer) userInfo:nil repeats:YES];
+    _timer=[NSTimer scheduledTimerWithTimeInterval:5.0 target:[YYWeakProxy proxyWithTarget:self] selector:@selector(dealTimer) userInfo:nil repeats:YES];
 }
 
 -(void)dealTimer

@@ -11,6 +11,11 @@
 #import "FPSLabelManager.h"
 #import "FPSShowLabel.h"
 
+#import "UIView+TYLaunchAnimation.h"
+#import "TYLaunchFadeScaleAnimation.h"
+#import "UIImage+TYLaunchImage.h"
+#import "TAdLaunchImageView.h"
+
 @interface AppDelegate ()
 @property (nonatomic,strong) FPSLabelManager * showFPSLabel;
 
@@ -21,6 +26,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(userDidTakeScreenshot:)
                                                  name:UIApplicationUserDidTakeScreenshotNotification object:nil];
@@ -33,6 +39,36 @@
     //fpslab
     FPSLabelManager * fpsL = [FPSLabelManager new];
     self.showFPSLabel = fpsL;
+    
+//    // Ad(广告) FadeAnimation
+//    TAdLaunchImageView *adLaunchImageView = [[TAdLaunchImageView alloc]initWithImage:[UIImage ty_getLaunchImage]];
+//    adLaunchImageView.URLString = @"http://img1.126.net/channel6/2015/020002/2.jpg?dpi=6401136";
+//    
+//    // 显示imageView
+//    [adLaunchImageView showInWindowWithAnimation:[TYLaunchFadeScaleAnimation fadeAnimationWithDelay:5.0] completion:^(BOOL finished) {
+//        
+//        [[UIApplication sharedApplication] setStatusBarHidden:NO];
+//        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+//        NSLog(@"finished");
+//    }];
+//    
+//    __typeof (self) __weak weakSelf = self;
+//    // 点击广告block
+//    [adLaunchImageView setClickedImageURLHandle:^(NSString *URLString) {
+//        [[UIApplication sharedApplication] setStatusBarHidden:NO];
+//        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+////        [weakSelf pushAdViewCntroller];
+//        NSLog(@"clickedImageURLHandle");
+//    }];
+    
+    // FadeScaleAnimation
+    UIImageView *imageView = [[UIImageView alloc]initWithImage:[UIImage ty_getLaunchImage]];
+    [imageView showInWindowWithAnimation:[TYLaunchFadeScaleAnimation fadeScaleAnimation] completion:^(BOOL finished) {
+        [[UIApplication sharedApplication] setStatusBarHidden:NO];
+        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+        NSLog(@"finished");
+    }];
+    
     return YES;
 
 }

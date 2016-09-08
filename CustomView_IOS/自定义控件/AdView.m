@@ -18,6 +18,7 @@
 #import "UIImageView+AFNetworking.h"
 #import "JWKitMacro.h"
 #import "YYAnimatedImageView.h"
+#import "YYWeakProxy.h"
 //#import "UIImageView+WebCache.h"
 //广告的宽度
 #define kAdViewWidth  _adScrollView.bounds.size.width
@@ -91,11 +92,15 @@ static NSUInteger rightImageIndex;
         _adScrollView.backgroundColor = [UIColor whiteColor];
         [self addSubview:_adScrollView];
     }
+    
+    
+    ([[UIScreen mainScreen] respondsToSelector:@selector(nativeBounds)] ? [UIScreen mainScreen].nativeBounds.size.width/[UIScreen mainScreen].nativeScale : [UIScreen mainScreen].bounds.size.width);
+    
     return self;
 }
 
 - (void)willMoveToSuperview:(UIView *)newSuperview {
-    moveTimer = [NSTimer scheduledTimerWithTimeInterval:_adMoveTime target:self selector:@selector(animalMoveImage) userInfo:nil repeats:YES];
+    moveTimer = [NSTimer scheduledTimerWithTimeInterval:_adMoveTime target:[YYWeakProxy proxyWithTarget:self] selector:@selector(animalMoveImage) userInfo:nil repeats:YES];
     _isTimeUp = NO;
 }
 
@@ -197,7 +202,7 @@ static NSUInteger rightImageIndex;
 {
     [_adScrollView setContentOffset:CGPointMake(kAdViewWidth * 2, 0) animated:YES];
     _isTimeUp = YES;
-    [NSTimer scheduledTimerWithTimeInterval:0.4f target:self selector:@selector(scrollViewDidEndDecelerating:) userInfo:nil repeats:NO];
+    [NSTimer scheduledTimerWithTimeInterval:0.4f target:[YYWeakProxy proxyWithTarget:self] selector:@selector(scrollViewDidEndDecelerating:) userInfo:nil repeats:NO];
 }
 
 #pragma mark - 图片停止时,调用该函数使得滚动视图复用
