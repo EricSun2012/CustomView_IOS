@@ -12,4 +12,6 @@
 
 -(void)setScrollviewSubViewsArr:(NSMutableArray *)views;
 
+-(void)removeViewWithTag:(NSInteger)ViewTag;
+
 @end

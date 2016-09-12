@@ -32,8 +32,11 @@
     [super viewDidLoad];
     
     [self addNotification];
+    
+    UIView * view =[self.view.subviews firstObject];
+    
     //需要设置线性布局控件集合的第一个控件的y轴，之后排列的控件不需要设置y轴 会自动向下排列
-    UILabel * labe = [[UILabel alloc]initWithFrame:CGRectMake(0, kScreenHeight/2, kScreenWidth, 20)];
+    UILabel * labe = [[UILabel alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(view.frame), kScreenWidth, 20)];
     labe.text = @"testlabel1";
     labe.backgroundColor = [UIColor redColor];
     
@@ -52,6 +55,7 @@
     text1.font = [UIFont systemFontOfSize:18];
     text1.importStyle = TextFieldImportStyleNumber; //设置输入限制的类型
     text1.keyboardType = UIKeyboardTypeNumberPad;
+    text1.tag = 9999;
     text1.importBackString = ^(NSString * money){
 
     };
@@ -70,11 +74,22 @@
     [self.scrollView setScrollviewSubViewsArr:arr];
 
     
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+        [self.scrollView removeViewWithTag:9999];
+        
+    });
+    
+    
+    
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
         [self.scrollView setScrollviewSubViewsArr:@[labe,labe2,text1].mutableCopy];
         
     });
+    
+    
+
     
     NSLog(@"subViewS:%@,\nsubViewSCount:%lu",self.scrollView.subviews,self.scrollView.subviews.count);
 }

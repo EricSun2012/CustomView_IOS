@@ -12,7 +12,7 @@
 
 @interface JWScrollView ()
 
-@property (nonatomic,strong) NSMutableArray * subViewsArr;
+@property (nonatomic,strong) NSMutableArray <UIView *> * subViewsArr;
 
 @end
 
@@ -44,6 +44,19 @@
     }
 }
 
+-(void)removeViewWithTag:(NSInteger)ViewTag{
+
+    [self.subViewsArr enumerateObjectsUsingBlock:^(UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        
+        if (obj.tag ==ViewTag) {
+            [obj removeFromSuperview];
+            [self.subViewsArr removeObjectAtIndex:idx];
+        }
+    }];
+    
+    [self reloadSubViews:self.subViewsArr];
+    
+}
 
 -(void)removeAllSubViews{
     [self.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
