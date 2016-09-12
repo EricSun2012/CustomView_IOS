@@ -32,7 +32,7 @@
     [super viewDidLoad];
     
     [self addNotification];
-
+    //需要设置线性布局控件集合的第一个控件的y轴，之后排列的控件不需要设置y轴 会自动向下排列
     UILabel * labe = [[UILabel alloc]initWithFrame:CGRectMake(0, kScreenHeight/2, kScreenWidth, 20)];
     labe.text = @"testlabel1";
     labe.backgroundColor = [UIColor redColor];
@@ -55,8 +55,19 @@
     text1.importBackString = ^(NSString * money){
 
     };
+    
+    NSMutableArray * arr = [NSMutableArray arrayWithCapacity:10];
+    
+    arr  = @[labe,labe1,labe2,text1].mutableCopy;
+    
+    for (int i = 0; i<20; i++) {
+        UILabel * la = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, 40)];
+        la.text = [NSString stringWithFormat:@"testlabel%d",i];
+        la.backgroundColor = [UIColor grayColor];
+        [arr addObject:la];
+    }
 
-    [self.scrollView setScrollviewSubViewsArr:@[labe,labe1,labe2,text1].mutableCopy];
+    [self.scrollView setScrollviewSubViewsArr:arr];
 
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
