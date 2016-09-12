@@ -144,6 +144,8 @@
 		11D36AA71D75350000247B10 /* ZJSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D36AA61D75350000247B10 /* ZJSwitch.m */; };
 		11D36AAA1D75354100247B10 /* CustomSwitchDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D36AA91D75354100247B10 /* CustomSwitchDemoViewController.m */; };
 		11D36AAD1D75380600247B10 /* MonitorScreenshotDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D36AAC1D75380600247B10 /* MonitorScreenshotDemoViewController.m */; };
+		11FBF6071D86896500208715 /* JWScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FBF6061D86896500208715 /* JWScrollView.m */; };
+		11FBF60A1D868A0A00208715 /* LineLayoutDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FBF6091D868A0A00208715 /* LineLayoutDemoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -442,6 +444,10 @@
 		11D36AA91D75354100247B10 /* CustomSwitchDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSwitchDemoViewController.m; sourceTree = "<group>"; };
 		11D36AAB1D75380600247B10 /* MonitorScreenshotDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonitorScreenshotDemoViewController.h; sourceTree = "<group>"; };
 		11D36AAC1D75380600247B10 /* MonitorScreenshotDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonitorScreenshotDemoViewController.m; sourceTree = "<group>"; };
+		11FBF6051D86896500208715 /* JWScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWScrollView.h; sourceTree = "<group>"; };
+		11FBF6061D86896500208715 /* JWScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWScrollView.m; sourceTree = "<group>"; };
+		11FBF6081D868A0A00208715 /* LineLayoutDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineLayoutDemoViewController.h; sourceTree = "<group>"; };
+		11FBF6091D868A0A00208715 /* LineLayoutDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineLayoutDemoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -568,6 +574,8 @@
 				1143521F1D7FBAF0009EE8F8 /* DynamicLoopDemoViewController.m */,
 				1100BF621D7FE5570058F230 /* PollingDemoViewController.h */,
 				1100BF631D7FE5570058F230 /* PollingDemoViewController.m */,
+				11FBF6081D868A0A00208715 /* LineLayoutDemoViewController.h */,
+				11FBF6091D868A0A00208715 /* LineLayoutDemoViewController.m */,
 			);
 			path = DemoVCS;
 			sourceTree = "<group>";
@@ -821,6 +829,8 @@
 				0758E9911D6FF37A00E7FCE7 /* NSObject+Extension.m */,
 				0758E9921D6FF37A00E7FCE7 /* UIView+Extension.h */,
 				0758E9931D6FF37A00E7FCE7 /* UIView+Extension.m */,
+				11FBF6051D86896500208715 /* JWScrollView.h */,
+				11FBF6061D86896500208715 /* JWScrollView.m */,
 			);
 			path = "自定义控件";
 			sourceTree = "<group>";
@@ -1224,6 +1234,7 @@
 				1100BF6C1D7FE64F0058F230 /* AdView.m in Sources */,
 				11D36AAD1D75380600247B10 /* MonitorScreenshotDemoViewController.m in Sources */,
 				0758E9A21D6FF37A00E7FCE7 /* KeyboardDemoViewController.m in Sources */,
+				11FBF60A1D868A0A00208715 /* LineLayoutDemoViewController.m in Sources */,
 				11D36AA71D75350000247B10 /* ZJSwitch.m in Sources */,
 				1100BFB31D7FEB3B0058F230 /* YYAnimatedImageView.m in Sources */,
 				0758E9CF1D6FF37A00E7FCE7 /* SDWebImageManager.m in Sources */,
@@ -1232,6 +1243,7 @@
 				1100BF641D7FE5570058F230 /* PollingDemoViewController.m in Sources */,
 				1117A7141D7FB45000B56974 /* FPSLabelRootVC.m in Sources */,
 				0758E9DC1D6FF37A00E7FCE7 /* JWLabel.m in Sources */,
+				11FBF6071D86896500208715 /* JWScrollView.m in Sources */,
 				1100BFA21D7FE6E30058F230 /* UIProgressView+AFNetworking.m in Sources */,
 				11D36AAA1D75354100247B10 /* CustomSwitchDemoViewController.m in Sources */,
 				0758E99C1D6FF37A00E7FCE7 /* DemoModel.m in Sources */,
