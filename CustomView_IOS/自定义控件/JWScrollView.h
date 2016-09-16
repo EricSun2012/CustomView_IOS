@@ -10,8 +10,14 @@
 
 @interface JWScrollView : UIScrollView
 
+@property (nonatomic,strong) NSMutableArray <UIView *> * allSubviwes;
+
 -(void)setScrollviewSubViewsArr:(NSMutableArray *)views;
 
 -(void)removeViewWithTag:(NSInteger)ViewTag;
+
+-(void)reloadViews;
+
+-(void)removeAllSubViews;
 
 @end

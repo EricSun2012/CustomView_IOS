@@ -146,6 +146,7 @@
 		11D36AAD1D75380600247B10 /* MonitorScreenshotDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D36AAC1D75380600247B10 /* MonitorScreenshotDemoViewController.m */; };
 		11FBF6071D86896500208715 /* JWScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FBF6061D86896500208715 /* JWScrollView.m */; };
 		11FBF60A1D868A0A00208715 /* LineLayoutDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FBF6091D868A0A00208715 /* LineLayoutDemoViewController.m */; };
+		5E5428111D8C10E600DBE252 /* JWScrollviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5428101D8C10E600DBE252 /* JWScrollviewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -448,6 +449,8 @@
 		11FBF6061D86896500208715 /* JWScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWScrollView.m; sourceTree = "<group>"; };
 		11FBF6081D868A0A00208715 /* LineLayoutDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineLayoutDemoViewController.h; sourceTree = "<group>"; };
 		11FBF6091D868A0A00208715 /* LineLayoutDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineLayoutDemoViewController.m; sourceTree = "<group>"; };
+		5E54280F1D8C10E600DBE252 /* JWScrollviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWScrollviewCell.h; sourceTree = "<group>"; };
+		5E5428101D8C10E600DBE252 /* JWScrollviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWScrollviewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -831,6 +834,8 @@
 				0758E9931D6FF37A00E7FCE7 /* UIView+Extension.m */,
 				11FBF6051D86896500208715 /* JWScrollView.h */,
 				11FBF6061D86896500208715 /* JWScrollView.m */,
+				5E54280F1D8C10E600DBE252 /* JWScrollviewCell.h */,
+				5E5428101D8C10E600DBE252 /* JWScrollviewCell.m */,
 			);
 			path = "自定义控件";
 			sourceTree = "<group>";
@@ -1230,6 +1235,7 @@
 				1117A7131D7FB45000B56974 /* FPSLabelManager.m in Sources */,
 				0758E9D91D6FF37A00E7FCE7 /* YYClassInfo.m in Sources */,
 				0758E9D71D6FF37A00E7FCE7 /* UIView+WebCacheOperation.m in Sources */,
+				5E5428111D8C10E600DBE252 /* JWScrollviewCell.m in Sources */,
 				11D36AA01D75325B00247B10 /* KeychainIDFA.m in Sources */,
 				1100BF6C1D7FE64F0058F230 /* AdView.m in Sources */,
 				11D36AAD1D75380600247B10 /* MonitorScreenshotDemoViewController.m in Sources */,

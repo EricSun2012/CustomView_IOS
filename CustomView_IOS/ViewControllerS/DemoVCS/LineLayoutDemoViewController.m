@@ -10,6 +10,8 @@
 
 #import "JWScrollView.h"
 
+#import "JWScrollviewCell.h"
+
 @interface LineLayoutDemoViewController ()
 @property (nonatomic,strong) JWScrollView * scrollView;
 @end
@@ -59,39 +61,60 @@
     text1.importBackString = ^(NSString * money){
 
     };
+
+//    self.view.backgroundColor = [UIColor redColor];
+    
+    JWScrollviewCell * cell1 = [[JWScrollviewCell alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(view.frame), kScreenWidth, 50)];
+    cell1.leftLabel.text = @"用户名";
+    cell1.rightTextField.placeholder = @"请输入用户名啊";
+    [cell1.rightTextField setPlaceholderColor:cell1.leftLabel.textColor];
+    [cell1.rightTextField setPlaceholderFont:cell1.leftLabel.font];
+    [cell1 setUPSpacing:1 andDownSpacing:1];
+    
     
     NSMutableArray * arr = [NSMutableArray arrayWithCapacity:10];
     
-    arr  = @[labe,labe1,labe2,text1].mutableCopy;
+    arr  = @[cell1].mutableCopy;
     
-    for (int i = 0; i<20; i++) {
-        UILabel * la = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, 40)];
-        la.text = [NSString stringWithFormat:@"testlabel%d",i];
-        la.backgroundColor = [UIColor grayColor];
-        [arr addObject:la];
+    for (int i = 0; i<5; i++) {
+        JWScrollviewCell * cell2 = [[JWScrollviewCell alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, 50)];
+        cell2.leftLabel.text = [NSString stringWithFormat:@"用户名%d",i];
+        cell2.rightTextField.placeholder = @"请输入用户名啊";
+//        [cell2.rightTextField setPlaceholderColor:cell1.leftLabel.textColor];
+        [cell2.rightTextField setPlaceholderFont:cell1.leftLabel.font];
+        [cell2 setUPSpacing:0 andDownSpacing:1];
+        [arr addObject:cell2];
     }
-
     [self.scrollView setScrollviewSubViewsArr:arr];
 
+    UIView * redview = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, 80)];
+    redview.backgroundColor = [UIColor redColor];
+    
+    
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
-        [self.scrollView removeViewWithTag:9999];
+        [arr insertObject:redview atIndex:1];
+        
+        self.scrollView.allSubviwes = arr;
+        
+        [self.scrollView reloadViews];
         
     });
-    
-    
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        
-        [self.scrollView setScrollviewSubViewsArr:@[labe,labe2,text1].mutableCopy];
-        
-    });
-    
-    
 
     
-    NSLog(@"subViewS:%@,\nsubViewSCount:%lu",self.scrollView.subviews,self.scrollView.subviews.count);
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        
+//        [self.scrollView removeViewWithTag:9999];
+//        
+//    });
+    
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        
+//        [self.scrollView setScrollviewSubViewsArr:@[labe,labe2,text1].mutableCopy];
+//        
+//    });
+
 }
 
 - (void)dealloc {

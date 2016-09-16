@@ -12,7 +12,7 @@
 
 @interface JWScrollView ()
 
-@property (nonatomic,strong) NSMutableArray <UIView *> * subViewsArr;
+//@property (nonatomic,strong) NSMutableArray <UIView *> * subViewsArr;
 
 @end
 
@@ -20,16 +20,15 @@
 
 -(void)setScrollviewSubViewsArr:(NSMutableArray *)views{
     
-    self.subViewsArr = views;
+    self.allSubviwes = views;
     
-    [self reloadSubViews:self.subViewsArr];
+    [self reloadSubViews:self.allSubviwes];
     
 }
 
 -(void)reloadSubViews:(NSMutableArray<UIView *> *)views{
     
     if (!views.count)return;
-    [self removeAllSubViews];
     UIView * view = [views firstObject];
     [self addSubview:view];
     for (int i =1; i<views.count; i++) {
@@ -40,21 +39,20 @@
         if (i == views.count-1) {
             self.contentSize = CGSizeMake(0, self.subviews.lastObject.y + self.subviews.lastObject.height);
         }
-        
     }
 }
 
 -(void)removeViewWithTag:(NSInteger)ViewTag{
 
-    [self.subViewsArr enumerateObjectsUsingBlock:^(UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    [self.allSubviwes enumerateObjectsUsingBlock:^(UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         
         if (obj.tag ==ViewTag) {
             [obj removeFromSuperview];
-            [self.subViewsArr removeObjectAtIndex:idx];
+            [self.allSubviwes removeObjectAtIndex:idx];
         }
     }];
     
-    [self reloadSubViews:self.subViewsArr];
+    [self reloadSubViews:self.allSubviwes];
     
 }
 
@@ -66,6 +64,10 @@
     }];
 }
 
+-(void)reloadViews{
 
+    [self reloadSubViews:self.allSubviwes];
+
+}
 
 @end

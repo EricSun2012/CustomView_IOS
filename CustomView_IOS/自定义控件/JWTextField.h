@@ -32,6 +32,10 @@ typedef NS_ENUM(NSInteger, TextFieldImportStyle) {
 
 @property (nonatomic,assign) BOOL zoomText; //是否缩放文字
 
+-(void)setPlaceholderColor:(UIColor *)placeholderColor;
+
+-(void)setPlaceholderFont:(UIFont *)placeholderFont;
+
 @end
 
 
