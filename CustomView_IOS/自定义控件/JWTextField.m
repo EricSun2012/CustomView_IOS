@@ -320,6 +320,13 @@
     
 }
 
+-(void)setPlaceholderColor:(UIColor *)placeholderColor{
+    [self setValue:placeholderColor forKeyPath:@"_placeholderLabel.textColor"];
+}
+
+-(void)setPlaceholderFont:(UIFont *)placeholderFont{
+    [self setValue:placeholderFont forKeyPath:@"_placeholderLabel.font"];
+}
 
 @end
 

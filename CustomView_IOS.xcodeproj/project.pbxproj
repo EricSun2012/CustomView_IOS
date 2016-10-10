@@ -109,6 +109,11 @@
 		1100BFB51D7FEB3B0058F230 /* YYImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1100BFAE1D7FEB3B0058F230 /* YYImage.m */; };
 		1100BFB61D7FEB3B0058F230 /* YYImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1100BFB01D7FEB3B0058F230 /* YYImageCoder.m */; };
 		1100BFB71D7FEB3B0058F230 /* YYSpriteSheetImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1100BFB21D7FEB3B0058F230 /* YYSpriteSheetImage.m */; };
+		1100BFCC1D80FEA70058F230 /* TYLaunchBaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1100BFC51D80FEA70058F230 /* TYLaunchBaseAnimation.m */; };
+		1100BFCD1D80FEA70058F230 /* TYLaunchFadeScaleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1100BFC71D80FEA70058F230 /* TYLaunchFadeScaleAnimation.m */; };
+		1100BFCE1D80FEA70058F230 /* UIImage+TYLaunchImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1100BFC91D80FEA70058F230 /* UIImage+TYLaunchImage.m */; };
+		1100BFCF1D80FEA70058F230 /* UIView+TYLaunchAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1100BFCB1D80FEA70058F230 /* UIView+TYLaunchAnimation.m */; };
+		1100BFD21D80FF030058F230 /* TAdLaunchImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1100BFD11D80FF030058F230 /* TAdLaunchImageView.m */; };
 		1117A7121D7FB45000B56974 /* FPSLabelContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1117A7071D7FB45000B56974 /* FPSLabelContainerVC.m */; };
 		1117A7131D7FB45000B56974 /* FPSLabelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1117A7091D7FB45000B56974 /* FPSLabelManager.m */; };
 		1117A7141D7FB45000B56974 /* FPSLabelRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1117A70B1D7FB45000B56974 /* FPSLabelRootVC.m */; };
@@ -139,6 +144,9 @@
 		11D36AA71D75350000247B10 /* ZJSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D36AA61D75350000247B10 /* ZJSwitch.m */; };
 		11D36AAA1D75354100247B10 /* CustomSwitchDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D36AA91D75354100247B10 /* CustomSwitchDemoViewController.m */; };
 		11D36AAD1D75380600247B10 /* MonitorScreenshotDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D36AAC1D75380600247B10 /* MonitorScreenshotDemoViewController.m */; };
+		11FBF6071D86896500208715 /* JWScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FBF6061D86896500208715 /* JWScrollView.m */; };
+		11FBF60A1D868A0A00208715 /* LineLayoutDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FBF6091D868A0A00208715 /* LineLayoutDemoViewController.m */; };
+		5E5428111D8C10E600DBE252 /* JWScrollviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5428101D8C10E600DBE252 /* JWScrollviewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -366,6 +374,17 @@
 		1100BFB01D7FEB3B0058F230 /* YYImageCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYImageCoder.m; sourceTree = "<group>"; };
 		1100BFB11D7FEB3B0058F230 /* YYSpriteSheetImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYSpriteSheetImage.h; sourceTree = "<group>"; };
 		1100BFB21D7FEB3B0058F230 /* YYSpriteSheetImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYSpriteSheetImage.m; sourceTree = "<group>"; };
+		1100BFC31D80FEA70058F230 /* TYLaunchAnimationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYLaunchAnimationProtocol.h; sourceTree = "<group>"; };
+		1100BFC41D80FEA70058F230 /* TYLaunchBaseAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYLaunchBaseAnimation.h; sourceTree = "<group>"; };
+		1100BFC51D80FEA70058F230 /* TYLaunchBaseAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYLaunchBaseAnimation.m; sourceTree = "<group>"; };
+		1100BFC61D80FEA70058F230 /* TYLaunchFadeScaleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYLaunchFadeScaleAnimation.h; sourceTree = "<group>"; };
+		1100BFC71D80FEA70058F230 /* TYLaunchFadeScaleAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYLaunchFadeScaleAnimation.m; sourceTree = "<group>"; };
+		1100BFC81D80FEA70058F230 /* UIImage+TYLaunchImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TYLaunchImage.h"; sourceTree = "<group>"; };
+		1100BFC91D80FEA70058F230 /* UIImage+TYLaunchImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TYLaunchImage.m"; sourceTree = "<group>"; };
+		1100BFCA1D80FEA70058F230 /* UIView+TYLaunchAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TYLaunchAnimation.h"; sourceTree = "<group>"; };
+		1100BFCB1D80FEA70058F230 /* UIView+TYLaunchAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TYLaunchAnimation.m"; sourceTree = "<group>"; };
+		1100BFD01D80FF030058F230 /* TAdLaunchImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAdLaunchImageView.h; sourceTree = "<group>"; };
+		1100BFD11D80FF030058F230 /* TAdLaunchImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAdLaunchImageView.m; sourceTree = "<group>"; };
 		1117A7061D7FB45000B56974 /* FPSLabelContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSLabelContainerVC.h; sourceTree = "<group>"; };
 		1117A7071D7FB45000B56974 /* FPSLabelContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSLabelContainerVC.m; sourceTree = "<group>"; };
 		1117A7081D7FB45000B56974 /* FPSLabelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSLabelManager.h; sourceTree = "<group>"; };
@@ -426,6 +445,12 @@
 		11D36AA91D75354100247B10 /* CustomSwitchDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSwitchDemoViewController.m; sourceTree = "<group>"; };
 		11D36AAB1D75380600247B10 /* MonitorScreenshotDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonitorScreenshotDemoViewController.h; sourceTree = "<group>"; };
 		11D36AAC1D75380600247B10 /* MonitorScreenshotDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonitorScreenshotDemoViewController.m; sourceTree = "<group>"; };
+		11FBF6051D86896500208715 /* JWScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWScrollView.h; sourceTree = "<group>"; };
+		11FBF6061D86896500208715 /* JWScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWScrollView.m; sourceTree = "<group>"; };
+		11FBF6081D868A0A00208715 /* LineLayoutDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineLayoutDemoViewController.h; sourceTree = "<group>"; };
+		11FBF6091D868A0A00208715 /* LineLayoutDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineLayoutDemoViewController.m; sourceTree = "<group>"; };
+		5E54280F1D8C10E600DBE252 /* JWScrollviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWScrollviewCell.h; sourceTree = "<group>"; };
+		5E5428101D8C10E600DBE252 /* JWScrollviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWScrollviewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -552,6 +577,8 @@
 				1143521F1D7FBAF0009EE8F8 /* DynamicLoopDemoViewController.m */,
 				1100BF621D7FE5570058F230 /* PollingDemoViewController.h */,
 				1100BF631D7FE5570058F230 /* PollingDemoViewController.m */,
+				11FBF6081D868A0A00208715 /* LineLayoutDemoViewController.h */,
+				11FBF6091D868A0A00208715 /* LineLayoutDemoViewController.m */,
 			);
 			path = DemoVCS;
 			sourceTree = "<group>";
@@ -559,6 +586,7 @@
 		0758E90B1D6FF37A00E7FCE7 /* 第三方控件 */ = {
 			isa = PBXGroup;
 			children = (
+				1100BFC21D80FEA70058F230 /* TYLaunchAnimation */,
 				1100BFA81D7FEB3B0058F230 /* YYImage */,
 				1100BF6E1D7FE6E30058F230 /* Network */,
 				1117A7051D7FB44400B56974 /* FPSLabel */,
@@ -804,6 +832,10 @@
 				0758E9911D6FF37A00E7FCE7 /* NSObject+Extension.m */,
 				0758E9921D6FF37A00E7FCE7 /* UIView+Extension.h */,
 				0758E9931D6FF37A00E7FCE7 /* UIView+Extension.m */,
+				11FBF6051D86896500208715 /* JWScrollView.h */,
+				11FBF6061D86896500208715 /* JWScrollView.m */,
+				5E54280F1D8C10E600DBE252 /* JWScrollviewCell.h */,
+				5E5428101D8C10E600DBE252 /* JWScrollviewCell.m */,
 			);
 			path = "自定义控件";
 			sourceTree = "<group>";
@@ -906,6 +938,24 @@
 				1100BFB21D7FEB3B0058F230 /* YYSpriteSheetImage.m */,
 			);
 			path = YYImage;
+			sourceTree = "<group>";
+		};
+		1100BFC21D80FEA70058F230 /* TYLaunchAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				1100BFD01D80FF030058F230 /* TAdLaunchImageView.h */,
+				1100BFD11D80FF030058F230 /* TAdLaunchImageView.m */,
+				1100BFC31D80FEA70058F230 /* TYLaunchAnimationProtocol.h */,
+				1100BFC41D80FEA70058F230 /* TYLaunchBaseAnimation.h */,
+				1100BFC51D80FEA70058F230 /* TYLaunchBaseAnimation.m */,
+				1100BFC61D80FEA70058F230 /* TYLaunchFadeScaleAnimation.h */,
+				1100BFC71D80FEA70058F230 /* TYLaunchFadeScaleAnimation.m */,
+				1100BFC81D80FEA70058F230 /* UIImage+TYLaunchImage.h */,
+				1100BFC91D80FEA70058F230 /* UIImage+TYLaunchImage.m */,
+				1100BFCA1D80FEA70058F230 /* UIView+TYLaunchAnimation.h */,
+				1100BFCB1D80FEA70058F230 /* UIView+TYLaunchAnimation.m */,
+			);
+			path = TYLaunchAnimation;
 			sourceTree = "<group>";
 		};
 		1117A7051D7FB44400B56974 /* FPSLabel */ = {
@@ -1128,8 +1178,10 @@
 				11D36A9F1D75325B00247B10 /* KeychainHelper.m in Sources */,
 				0758E9DD1D6FF37A00E7FCE7 /* JWTextField.m in Sources */,
 				0758E9B31D6FF37A00E7FCE7 /* UIImage+DrawBlock.m in Sources */,
+				1100BFCD1D80FEA70058F230 /* TYLaunchFadeScaleAnimation.m in Sources */,
 				0758E9D41D6FF37A00E7FCE7 /* UIImage+WebP.m in Sources */,
 				0758E9C11D6FF37A00E7FCE7 /* NSObject+MJProperty.m in Sources */,
+				1100BFCC1D80FEA70058F230 /* TYLaunchBaseAnimation.m in Sources */,
 				11D36A8D1D751AFC00247B10 /* PinYinForObjc.m in Sources */,
 				1100BFB41D7FEB3B0058F230 /* YYFrameImage.m in Sources */,
 				11D36A931D75248D00247B10 /* ZFProgressView.m in Sources */,
@@ -1138,6 +1190,7 @@
 				1100BF991D7FE6E30058F230 /* AFURLResponseSerialization.m in Sources */,
 				114352231D7FBEB1009EE8F8 /* UITabBar+Badge.m in Sources */,
 				0758E9AF1D6FF37A00E7FCE7 /* JPSCameraButton.m in Sources */,
+				1100BFCF1D80FEA70058F230 /* UIView+TYLaunchAnimation.m in Sources */,
 				0758E9BD1D6FF37A00E7FCE7 /* MJPropertyType.m in Sources */,
 				0758E9DB1D6FF37A00E7FCE7 /* JWAlertView.m in Sources */,
 				0758E9D01D6FF37A00E7FCE7 /* SDWebImagePrefetcher.m in Sources */,
@@ -1158,6 +1211,7 @@
 				0758E9C41D6FF37A00E7FCE7 /* PDTSimpleCalendarViewController.m in Sources */,
 				0758E9C31D6FF37A00E7FCE7 /* PDTSimpleCalendarViewCell.m in Sources */,
 				0758E9BE1D6FF37A00E7FCE7 /* NSObject+MJClass.m in Sources */,
+				1100BFD21D80FF030058F230 /* TAdLaunchImageView.m in Sources */,
 				11D36A761D751ABE00247B10 /* DWBankModel.m in Sources */,
 				0758E9AC1D6FF37A00E7FCE7 /* MVVMStore.m in Sources */,
 				114352201D7FBAF0009EE8F8 /* DynamicLoopDemoViewController.m in Sources */,
@@ -1181,10 +1235,12 @@
 				1117A7131D7FB45000B56974 /* FPSLabelManager.m in Sources */,
 				0758E9D91D6FF37A00E7FCE7 /* YYClassInfo.m in Sources */,
 				0758E9D71D6FF37A00E7FCE7 /* UIView+WebCacheOperation.m in Sources */,
+				5E5428111D8C10E600DBE252 /* JWScrollviewCell.m in Sources */,
 				11D36AA01D75325B00247B10 /* KeychainIDFA.m in Sources */,
 				1100BF6C1D7FE64F0058F230 /* AdView.m in Sources */,
 				11D36AAD1D75380600247B10 /* MonitorScreenshotDemoViewController.m in Sources */,
 				0758E9A21D6FF37A00E7FCE7 /* KeyboardDemoViewController.m in Sources */,
+				11FBF60A1D868A0A00208715 /* LineLayoutDemoViewController.m in Sources */,
 				11D36AA71D75350000247B10 /* ZJSwitch.m in Sources */,
 				1100BFB31D7FEB3B0058F230 /* YYAnimatedImageView.m in Sources */,
 				0758E9CF1D6FF37A00E7FCE7 /* SDWebImageManager.m in Sources */,
@@ -1193,6 +1249,7 @@
 				1100BF641D7FE5570058F230 /* PollingDemoViewController.m in Sources */,
 				1117A7141D7FB45000B56974 /* FPSLabelRootVC.m in Sources */,
 				0758E9DC1D6FF37A00E7FCE7 /* JWLabel.m in Sources */,
+				11FBF6071D86896500208715 /* JWScrollView.m in Sources */,
 				1100BFA21D7FE6E30058F230 /* UIProgressView+AFNetworking.m in Sources */,
 				11D36AAA1D75354100247B10 /* CustomSwitchDemoViewController.m in Sources */,
 				0758E99C1D6FF37A00E7FCE7 /* DemoModel.m in Sources */,
@@ -1202,6 +1259,7 @@
 				1143521A1D7FB956009EE8F8 /* GradientAnimationDemoViewController.m in Sources */,
 				0758E9AD1D6FF37A00E7FCE7 /* Foundation+Log.m in Sources */,
 				1100BFB71D7FEB3B0058F230 /* YYSpriteSheetImage.m in Sources */,
+				1100BFCE1D80FEA70058F230 /* UIImage+TYLaunchImage.m in Sources */,
 				11D36A881D751AFC00247B10 /* ChineseInclude.m in Sources */,
 				0758E9C01D6FF37A00E7FCE7 /* NSObject+MJKeyValue.m in Sources */,
 				1100BFB51D7FEB3B0058F230 /* YYImage.m in Sources */,
@@ -1354,6 +1412,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = CustomView_IOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1366,6 +1425,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = CustomView_IOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

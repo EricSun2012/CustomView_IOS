@@ -7,6 +7,7 @@
 //
 
 #import "ZFProgressView.h"
+#import "YYWeakProxy.h"
 
 #define Duration 1.0
 #define DefaultLineWidth 3
@@ -153,7 +154,7 @@
         _progressLayer.strokeEnd = _Percentage;
         //start timer
         _timer = [NSTimer scheduledTimerWithTimeInterval:_step
-                                                  target:self
+                                                  target:[YYWeakProxy proxyWithTarget:self]
                                                 selector:@selector(numberAnimation)
                                                 userInfo:nil
                                                  repeats:YES];
